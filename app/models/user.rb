@@ -4,4 +4,6 @@ class User < ApplicationRecord
   validates :email, presence: true
   validates :password, length: {in: 8..32}
   has_secure_password
+
+  has_many :topics
 end
